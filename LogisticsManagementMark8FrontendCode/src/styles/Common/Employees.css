@@ -1,0 +1,40 @@
+employees-page {
+  text-align:center;
+}
+
+.employee-image {
+  width:500px;
+  height:auto;
+  border-radius:8px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.employee-table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:30px;
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.employee-table th {
+  background:#fff;
+}

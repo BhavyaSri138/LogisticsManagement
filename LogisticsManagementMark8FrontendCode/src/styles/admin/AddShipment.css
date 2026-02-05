@@ -1,0 +1,53 @@
+.add-shipment-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f5f7fa;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-shipment-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: bold;
+}
+
+.add-shipment-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-shipment-details input,
+.add-shipment-details select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.add-shipment-details input:focus,
+.add-shipment-details select:focus {
+  border-color: white;
+  outline: none;
+}
+
+.buy-button {
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #218838;
+}

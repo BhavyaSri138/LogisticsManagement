@@ -1,0 +1,29 @@
+.user-profile {
+  padding: 20px;
+  background: #f1f2f6;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.user-profile h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.profile-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profile-card p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.profile-card strong {
+  color: #007bff;
+}

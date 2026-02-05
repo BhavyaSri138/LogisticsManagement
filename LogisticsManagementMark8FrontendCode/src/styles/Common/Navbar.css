@@ -1,0 +1,140 @@
+
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e293b;
+  padding: 15px 30px;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+/* Links Wrapper */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+/* Direct Links (Home, Login) */
+.nav-link {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #38bdf8;
+}
+
+/* Login Link Special Styling */
+.login-link {
+  padding: 6px 14px;
+  border: 1px solid #38bdf8;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.login-link:hover {
+  background: #38bdf8;
+  color: #1e293b;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  color: #38bdf8;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #334155;
+  min-width: 160px;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #1e293b;
+  color: #38bdf8;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/* Hamburger for Mobile */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #1e293b;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 220px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    background: #334155;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

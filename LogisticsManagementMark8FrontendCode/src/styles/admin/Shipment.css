@@ -1,0 +1,245 @@
+/* Container */
+.shipments-container {
+padding: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f9f9f9;
+min-height: 100vh;
+}
+
+/* Title */
+.shipments-title {
+text-align: center;
+font-size: 32px;
+margin-bottom: 30px;
+color: #333;
+}
+
+/* Filter bar */
+.filter-bar {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+justify-content: center;
+margin-bottom: 30px;
+}
+
+.filter-bar input,
+.filter-bar select {
+padding: 10px 15px;
+font-size: 16px;
+border-radius: 8px;
+border: 1px solid #ccc;
+outline: none;
+background-color: #fff;
+transition: border 0.2s ease-in-out;
+}
+
+.filter-bar input:focus,
+.filter-bar select:focus {
+border-color: white;
+}
+
+/* Grid for shipment cards */
+.shipments-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 25px;
+}
+
+/* Card styling */
+.shipment-card {
+background-color: #ffffff;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+overflow: hidden;
+transition: transform 0.2s ease;
+}
+
+.shipment-card:hover {
+transform: translateY(-5px);
+}
+
+/* Product Image */
+.shipment-image {
+width: 100%;
+height: 220px;
+object-fit: cover;
+}
+
+/* Shipment details */
+.shipment-details {
+padding: 20px;
+}
+
+.shipment-name {
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 10px;
+color: #333;
+}
+
+.shipment-category {
+font-size: 14px;
+color: #777;
+margin-bottom: 10px;
+}
+
+.shipment-details p {
+margin: 5px 0;
+font-size: 14px;
+color: #444;
+}
+
+.shipment-price {
+font-size: 16px;
+font-weight: bold;
+color: #1a73e8;
+margin-top: 10px;
+}
+
+/* Action buttons */
+.shipment-actions {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin-top: 15px;
+}
+
+.shipment-actions button {
+flex: 1;
+padding: 8px 10px;
+font-size: 14px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.2s ease;
+}
+
+/* Button styles */
+.details-button {
+background-color: #6c757d;
+color: white;
+}
+
+.details-button:hover {
+background-color: #5a6268;
+}
+
+.buy-button {
+background-color: #28a745;
+color: white;
+}
+
+.buy-button:hover {
+background-color: #218838;
+}
+
+.cart-button {
+background-color: #ffc107;
+color: #212529;
+}
+
+.cart-button:hover {
+background-color: #e0a800;
+}
+
+.wishlist-button {
+background-color: #17a2b8;
+color: white;
+}
+
+.wishlist-button:hover {
+background-color: #138496;
+}
+
+.delete-button {
+background-color: #dc3545;
+color: white;
+}
+
+.delete-button:hover {
+background-color: #c82333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.shipment-actions {
+flex-direction: column;
+}
+}
+
+
+
+.shipments-container {
+  padding: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.shipments-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.shipment-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.shipment-card h3 {
+  margin: 0 0 10px;
+}
+
+.details-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+.no-results {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
+
+.shipment-details {
+  padding: 20px;
+}
+
+.shipment-card.big {
+  padding: 25px;
+}
+
+.back-btn {
+  margin-top: 20px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #222;
+}

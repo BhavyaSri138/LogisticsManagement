@@ -1,0 +1,38 @@
+.user-dashboard {
+  padding: 20px;
+  background: #f8f9fa;
+}
+
+.user-dashboard h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.dashboard-section {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  background: white;
+  color: black;
+  transform: translateY(-5px);
+}
