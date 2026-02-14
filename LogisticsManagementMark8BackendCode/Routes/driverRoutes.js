@@ -4,12 +4,11 @@ const { postDriver, getAvailableDrivers, getDriverById, getAssignedDrivers, getD
 
 
 //driver
-driverRouter.post('/driver',postDriver())
-driverRouter.get('/driver',getAvailableDrivers())
-driverRouter.get('/driver/:id',getDriverById())
-driverRouter.get('/assignedDrivers',getAssignedDrivers())
-driverRouter.get("/driver/orders/:driverId",getDriverOrderById)
-
+driverRouter.post('/driver', postDriver)
+driverRouter.get('/driver', getAvailableDrivers)
+driverRouter.get('/driver/:id', getDriverById)
+driverRouter.get('/assignedDrivers', getAssignedDrivers)
+driverRouter.get('/driver/orders/:driverId', getDriverOrderById)
 
 
 
